@@ -4,10 +4,19 @@ import { useRouter } from "next/router";
 
 const Contact = () => {
   const [submitterName, setSubmitterName] = useState("")
+  const [mail, setMail] = useState("");
+  const [msg, setMsg] = useState("");
   const router = useRouter();
   const confirmationScreenVisible =
     router.query?.success && router.query.success === "true";
   const formVisible = !confirmationScreenVisible; 
+
+  // Use nodemailer for Mail service
+  const handleSubmit=(e)=> {
+    e.preventDefault();
+    console.log("Inputs are", submitterName , mail, msg);
+  }
+
 
   const ConfirmationMessage = (
     <React.Fragment>
@@ -32,6 +41,7 @@ const Contact = () => {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className={styles.form}
+      onSubmit={handleSubmit}
     >
       <input
         type="hidden"
@@ -40,11 +50,11 @@ const Contact = () => {
       />
       <input type="hidden" name="form-name" value="contact-form" />
       <p hidden>
-        <label>
+        <label className={styles.label}>
           Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
-      <label htmlFor="name">Name</label>
+      <label className={styles.label} htmlFor="name">Name</label>
       <input
         id="name"
         name="name"
@@ -53,20 +63,22 @@ const Contact = () => {
         onChange={(e) => setSubmitterName(e.target.value)}
         className={styles.input}
       />
-      <label htmlFor="email">E-mail Address</label>
+      <label className={styles.label} htmlFor="email">E-mail Address</label>
       <input
         id="email"
         type="email"
         name="email"
+        onChange={(e) => setMail(e.target.value)}
         required
         className={styles.input}
       />
-      <label htmlFor="message">Message</label>
+      <label className={styles.label} htmlFor="message">Message</label>
       <textarea
         id="message"
         name="message"
         required
         className={styles.input}
+        onChange={(e) => setMsg(e.target.value)}
       ></textarea>
       <button type="submit" className={styles.btn}>
         Submit
@@ -84,8 +96,8 @@ const Contact = () => {
       {formVisible ? ContactForm : ConfirmationMessage}
       <p>
         Follow me on{" "}
-        <a href="https://instagram.com/debbiedannyoga">Instagram</a> or{" "}
-        <a href="https://www.facebook.com/debbiedannyoga">Facebook</a>.
+        <a href="https://www.instagram.com/prashantm_yoga?igsh=M3lweHNuNnI3Z3lx">Instagram</a> or{" "}
+        <a href="https://www.facebook.com/prashant.madane.353?mibextid=ZbWKwL">Facebook</a>.
       </p>
     </div>
   );

@@ -17,8 +17,14 @@
 
 .input {
     padding: 1em 2em;
+    border: 1px solid gray;
 }
 
+.label{
+  font-size: large;
+  font-weight: bolder;
+
+}
 @media only screen and (min-width: 768px) {
   .container {
     width: 80%;

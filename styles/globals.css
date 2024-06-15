@@ -31,6 +31,9 @@ a {
 h1,
 h2 {
   font-family: "Italiana", serif;
+  font-size: x-large;
+  font-weight: bold;
+  align-items: center;
 }
 
 h3 {
@@ -163,7 +166,7 @@ footer > * {
   gap: 1em;
   grid-template-areas:
     "instagram facebook "
-    "logo logo";
+    "linkedin FaYoutube";
   justify-items: center;
   align-items: start;
 }
@@ -177,6 +180,16 @@ footer > * {
   grid-area: instagram;
   justify-self: end;
 }
+.FaYoutube {
+  grid-area: FaYoutube;
+  justify-self: start;
+}
+
+.linkedin {
+  grid-area: linkedin;
+  justify-self: end;
+}
+
 
 .social-icons {
   font-size: 3rem;
@@ -194,6 +207,12 @@ footer > * {
 }
 .footer-nav a {
   font-weight: 400;
+}
+
+.footer-copyright {
+  margin-top: 1rem;
+  font-size: 0.875rem; /* Smaller font size */
+  color: #777; /* Lighter color */
 }
 
 * {

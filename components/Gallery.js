@@ -2,23 +2,23 @@ export default function Gallery() {
   const myImages = [
     {
       index: 1,
-      alt: "Easy Pose",
-      image: "easy-pose-yoga-3.jpg",
+      alt: "Matsyasana Pose prashant madane yoga",
+      image: "matsyasana_prashant_yoga.jpeg",
     },
     {
       index: 2,
-      alt: "Childs Pose",
-      image: "restorative-yoga-childs-pose.jpg",
+      alt: "Chakrasana Pose prashant madane yoga",
+      image: "chakrasana_prashant_yoga.jpeg",
     },
     {
       index: 3,
-      alt: "Squat",
-      image: "yoga-squat.jpg",
+      alt: "Tree pose prashant madane yoga",
+      image: "tree_pose_prashant_yoga.jpeg",
     },
     {
       index: 4,
-      alt: "Seated twist",
-      image: "yoga-seated-twist-2.jpg",
+      alt: "Ekpaadasana pose prashant madane yoga",
+      image: "ekpaadasana_prashant_yoga.jpeg",
     },
   ];
 
@@ -26,7 +26,7 @@ export default function Gallery() {
     <div className="gallery">
       {myImages.map((item) => (
         <img
-          src={`../images/gallery/${item.image}`}
+          src={`../images/prashant/${item.image}`}
           alt={item.alt}
           key={item.index}
           className="gallery-img"
