@@ -54,8 +54,8 @@ nav {
   align-items: center;
   margin-bottom: 1em;
 }
-.website-title { 
-  order: -1; 
+.website-title {
+  order: -1;
 }
 
 .right-nav {
@@ -68,7 +68,7 @@ nav {
   }
 
   .website-title {
-      order: 0; 
+    order: 0;
   }
 }
 
@@ -190,7 +190,6 @@ footer > * {
   justify-self: end;
 }
 
-
 .social-icons {
   font-size: 3rem;
 }
@@ -230,4 +229,18 @@ footer > * {
   footer {
     gap: 6em;
   }
+}
+
+/*background pattern*/
+
+.background_pattern {
+  z-index: -999;
+  background-color: #e5e5f7;
+  opacity: 0.4;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 40px
+    ),
+    repeating-linear-gradient(#30009755, #300097);
 }

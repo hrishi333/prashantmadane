@@ -25,6 +25,8 @@ const Footer = () => {
             href="https://www.instagram.com/prashantm_yoga?igsh=M3lweHNuNnI3Z3lx"
             className="social-icons instagram"
              title="Instagram"
+             target="_blank"
+             rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>
@@ -32,13 +34,17 @@ const Footer = () => {
             href="https://www.facebook.com/prashant.madane.353?mibextid=ZbWKwL"
             className="social-icons facebook"
              title="Facebook"
+             target="_blank"
+            rel="noopener noreferrer"
           >
             <FaFacebookSquare />
           </a>
           <a
             href="https://twitter.com/your_twitter_handle"
             className="social-icons FaYoutube"
-             title="Youtube"
+            title="Youtube"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaYoutube />
           </a>
@@ -46,6 +52,8 @@ const Footer = () => {
             href="https://www.linkedin.com/in/prashant-madane-5b3954188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="social-icons linkedin"
              title="LinkedIn"
+             target="_blank"
+             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>

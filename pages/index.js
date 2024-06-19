@@ -53,8 +53,8 @@ export default function Home() {
           <div className={styles.heroCopy}>
             <p>
               <span>
-                "Nurture Mind and Body at Home: Traditional and Therapeutic
-                Yoga."
+              &quot;Nurture Mind and Body at Home: Traditional and Therapeutic
+                Yoga.&quot;
               </span>
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function Home() {
           
         <Testimonial/>
 
-           {/*  <p>
+           {/*<p>
               Would you like free affirmation cards to promote happiness and
               self worth? Register for my monthly newsletter and it’ll arrive
               straight in your inbox. You’ll also find out first when my classes
