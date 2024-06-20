@@ -59,8 +59,8 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.heroPrice}>
-            <h3>Free</h3>
-            <p>Trial Sessions</p>
+          <h3 className="text-3xl font-bold text-indigo-600">Free</h3>
+          <p className="text-lg text-gray-600">Trial Sessions</p>
           </div>
         </div>
 

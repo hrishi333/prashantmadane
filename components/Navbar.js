@@ -7,7 +7,12 @@ const Navbar = () => {
   };
   return (
     <nav>
-       <h1 className="website-title mt-4 md:mt-1">Prashant M Yoga</h1>
+      <h1 className="website-title  font-open-sans font-bold mt-4 md:mt-1">
+        <span className="text-indigo-900 text-4xl font-bold">P</span>
+        <span className="text-indigo-900 text-3xl font-bold">rashanta</span>
+        <span className="text-indigo-900 text-4xl font-bold">M</span>
+        <span className="text-orange-600 text-3xl font-bold">Yoga</span>
+      </h1>
       <div className="left-nav">
         <Link href="/">
           <a>Home</a>
@@ -19,9 +24,16 @@ const Navbar = () => {
           <a>Contact</a>
         </Link>
       </div>
-     
+
       <div className="right-nav">
-        <button className="bg-green-500 hover:text-gray-500 text-gray-700 font-bold py-2 px-4 rounded inline-flex items-center" style={{display:"flex", alignItems:"center"}} onClick={handleBookClassClick}><FaWhatsapp className="m-1"/>Book your class</button>
+        <button
+          className="bg-green-500 hover:text-gray-500 text-gray-700 font-bold py-2 px-4 rounded inline-flex items-center"
+          style={{ display: "flex", alignItems: "center" }}
+          onClick={handleBookClassClick}
+        >
+          <FaWhatsapp className="m-1" />
+          Book your class
+        </button>
       </div>
     </nav>
   );
