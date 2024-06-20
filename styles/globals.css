@@ -31,7 +31,7 @@ a {
 h1,
 h2 {
   font-family: "Italiana", serif;
-  font-size: x-large;
+  font-size: x-large !important;
   font-weight: bold;
   align-items: center;
 }
@@ -233,7 +233,7 @@ footer > * {
 
 /*background pattern*/
 
-.background_pattern {
+/* .background_pattern {
   z-index: -999;
   background-color: #e5e5f7;
   opacity: 0.4;
@@ -243,4 +243,4 @@ footer > * {
       #e5e5f7 40px
     ),
     repeating-linear-gradient(#30009755, #300097);
-}
+} */
