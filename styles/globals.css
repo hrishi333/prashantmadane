@@ -8,8 +8,8 @@
   --dark-grey: #42454c;
 }
 
-body {
-  margin: 0 3em;
+body , .mainLayout{
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--pale-cream);
@@ -19,6 +19,9 @@ body {
   color: var(--dark-grey);
   font-size: 16px;
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(221, 249, 255, 1), rgba(237, 218, 255, 1))
 }
 
 a {
@@ -51,15 +54,17 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1em;
+  align-items: center !important;
+  margin: 0 1em 0 1em;
 }
 .website-title {
   order: -1;
+  font-weight: bold;
+  font-size: xx-large;
 }
 
 .right-nav {
-  margin-top: 1em;
+  margin: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -147,7 +152,7 @@ button:hover {
 
 footer {
   border-top: 1px solid var(--soft-pink);
-  margin: 3em 0;
+  margin: 0 1em 0 1em;
   padding-top: 1em;
   display: flex;
   flex-direction: column;
