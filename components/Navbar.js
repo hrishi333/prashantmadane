@@ -7,12 +7,7 @@ const Navbar = () => {
   };
   return (
     <nav>
-      <h1 className="website-title  font-open-sans font-bold mt-4 md:mt-1">
-        <span className="text-indigo-900 text-4xl font-bold">P</span>
-        <span className="text-indigo-900 text-3xl font-bold">rashanta</span>
-        <span className="text-indigo-900 text-4xl font-bold">M</span>
-        <span className="text-orange-600 text-3xl font-bold">Yoga</span>
-      </h1>
+    
       <div className="left-nav">
         <Link href="/">
           <a>Home</a>
@@ -24,6 +19,13 @@ const Navbar = () => {
           <a>Contact</a>
         </Link>
       </div>
+
+      <h1 className="website-title  font-open-sans font-bold my-2 md:my-1">
+        <span className="text-indigo-900 text-4xl font-bold">P</span>
+        <span className="text-indigo-900 text-3xl font-bold">rashanta</span>
+        <span className="text-indigo-900 text-4xl font-bold">M</span>
+        <span className="text-orange-600 text-3xl font-bold">Yoga</span>
+      </h1>
 
       <div className="right-nav">
         <button

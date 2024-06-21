@@ -8,9 +8,9 @@
   --dark-grey: #42454c;
 }
 
-body , .mainLayout{
+body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   box-sizing: border-box;
   background-color: var(--pale-cream);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -40,8 +40,8 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: x-large;
+  font-weight: bold;
   margin: 0;
 }
 
