@@ -22,7 +22,7 @@ const Footer = () => {
       <div>
         <div className="social">
           <a
-            href="https://www.instagram.com/prashantm_yoga?igsh=M3lweHNuNnI3Z3lx"
+            href="https://www.instagram.com/prashantam_yoga?igsh=c3ppNzN6M2s1eGEx"
             className="social-icons instagram"
              title="Instagram"
              target="_blank"
@@ -31,7 +31,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.facebook.com/prashant.madane.353?mibextid=ZbWKwL"
+            href="https://www.facebook.com/prashant.madane.353"
             className="social-icons facebook"
              title="Facebook"
              target="_blank"
@@ -40,7 +40,7 @@ const Footer = () => {
             <FaFacebookSquare />
           </a>
           <a
-            href="https://twitter.com/your_twitter_handle"
+            href="https://www.youtube.com/@prashantmadane7129"
             className="social-icons FaYoutube"
             title="Youtube"
             target="_blank"

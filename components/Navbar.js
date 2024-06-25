@@ -5,26 +5,34 @@ const Navbar = () => {
   const handleBookClassClick = () => {
     window.open("https://wa.me/919226943621", "_blank");
   };
+
   return (
     <nav>
-    
       <div className="left-nav">
-        <Link href="/">
-          <a>Home</a>
+        <Link href="/" passHref>
+          <a title="Home - Prashantam Yoga">Home</a>
         </Link>
-        <Link href="/blog">
-          <a>Blog</a>
+        <Link href="/blog" passHref>
+          <a title="Blog - Prashantam Yoga">Blog</a>
         </Link>
-        <Link href="/contact">
-          <a>Contact</a>
+        <Link href="/contact" passHref>
+          <a title="Contact Us - Prashantam Yoga">Contact</a>
         </Link>
       </div>
 
-      <h1 className="website-title  font-open-sans font-bold my-2 md:my-1">
-        <span className="text-indigo-900 text-4xl font-bold">P</span>
-        <span className="text-indigo-900 text-3xl font-bold">rashanta</span>
-        <span className="text-indigo-900 text-4xl font-bold">M</span>
-        <span className="text-orange-600 text-3xl font-bold">Yoga</span>
+      <div className="website-title">
+        <img
+          alt="Prashantam Yoga Main Logo"
+          src="/images/logo/Prashantamyoga_main_logo_navbar.png"
+          className="h-[5rem] w-auto font-open-sans font-bold my-2 md:my-1"
+        />
+      </div>
+
+      <h1
+        style={{ display: "none" }}
+        className="website-title font-open-sans font-bold my-2 md:my-1"
+      >
+        Prashantam Yoga Classes - Find Your Inner Peace
       </h1>
 
       <div className="right-nav">
@@ -32,6 +40,7 @@ const Navbar = () => {
           className="bg-green-500 hover:text-gray-500 text-gray-700 font-bold py-2 px-4 rounded inline-flex items-center"
           style={{ display: "flex", alignItems: "center" }}
           onClick={handleBookClassClick}
+          title="Book Your Yoga Class via WhatsApp"
         >
           <FaWhatsapp className="m-1" />
           Book your class
