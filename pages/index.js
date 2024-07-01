@@ -33,106 +33,64 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PrashantaM Yoga | Online Yoga Classes for Wellness</title>
-        <meta
-          name="description"
-          content="Join PrashantaM Yoga for online yoga classes that nurture your mind and body. Experience traditional and therapeutic yoga from the comfort of your home."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/P-yoga_nav_icon_design.png" />
+  <title>PrashantaM Yoga | Online Yoga Classes for Wellness</title>
+  <meta
+    name="description"
+    content="Join PrashantaM Yoga for online yoga classes that nurture your mind and body. Experience traditional and therapeutic yoga from the comfort of your home."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/P-yoga_nav_icon_design.png" />
+  
+  {/* Charset Meta Tag */}
+  <meta charSet="UTF-8" />
 
-        {/* Charset Meta Tag */}
-        <meta charSet="UTF-8" />
+  {/* Author Meta Tag */}
+  <meta name="author" content="PrashantaM Yoga" />
 
-        {/* Author Meta Tag */}
-        <meta name="author" content="PrashantaM Yoga" />
+  {/* Language Meta Tag */}
+  <meta httpEquiv="Content-Language" content="en" />
 
-        {/* Language Meta Tag */}
-        <meta httpEquiv="Content-Language" content="en" />
+  {/* Robots Meta Tag */}
+  <meta name="robots" content="index, follow" />
 
-        {/* Robots Meta Tag */}
-        <meta name="robots" content="index, follow" />
+  {/* Keywords Meta Tag */}
+  <meta name="keywords" content="yoga, online yoga classes, therapeutic yoga, traditional yoga, yoga for wellness, PrashantaM Yoga, yoga from home, yoga for stress management, yoga for weight loss" />
 
-        {/* Keywords Meta Tag */}
-        <meta
-          name="keywords"
-          content="yoga, online yoga classes, therapeutic yoga, traditional yoga, yoga for wellness, PrashantaM Yoga, yoga from home, yoga for stress management, yoga for weight loss"
-        />
+  {/* Canonical Link */}
+  <link rel="canonical" href="https://www.prashantamyoga.com" />
 
-        {/* Canonical Link */}
-        <link rel="canonical" href="https://www.prashantamyoga.com" />
+  {/* Favicons and App Icons */}
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
 
-        {/* Favicons and App Icons */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/android-chrome-192x192.png"
-        />
+  {/* Open Graph Meta Tags */}
+  <meta property="og:title" content="PrashantaM Yoga | Online Yoga Classes for Wellness" />
+  <meta property="og:description" content="Join PrashantaM Yoga for online yoga classes that nurture your mind and body. Experience traditional and therapeutic yoga from the comfort of your home." />
+  <meta property="og:image" content="/images/og_image_prashantamyoga.jpeg" />
+  <meta property="og:url" content="https://www.prashantamyoga.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PrashantaM Yoga" />
 
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="PrashantaM Yoga | Online Yoga Classes for Wellness"
-        />
-        <meta
-          property="og:description"
-          content="Join PrashantaM Yoga for online yoga classes that nurture your mind and body. Experience traditional and therapeutic yoga from the comfort of your home."
-        />
-        <meta
-          property="og:image"
-          content="/images/og_image_prashantamyoga.jpeg"
-        />
-        <meta property="og:url" content="https://www.prashantamyoga.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="PrashantaM Yoga" />
+  {/* Twitter Meta Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PrashantaM Yoga | Online Yoga Classes for Wellness" />
+  <meta name="twitter:description" content="Join PrashantaM Yoga for online yoga classes that nurture your mind and body. Experience traditional and therapeutic yoga from the comfort of your home." />
+  <meta name="twitter:image" content="/images/twitter_image_prashantamyoga.jpeg" />
+  <meta name="twitter:site" content="@PrashantaMYoga" />
 
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="PrashantaM Yoga | Online Yoga Classes for Wellness"
-        />
-        <meta
-          name="twitter:description"
-          content="Join PrashantaM Yoga for online yoga classes that nurture your mind and body. Experience traditional and therapeutic yoga from the comfort of your home."
-        />
-        <meta
-          name="twitter:image"
-          content="/images/twitter_image_prashantamyoga.jpeg"
-        />
-        <meta name="twitter:site" content="@PrashantaMYoga" />
+  {/* Social Media Links */}
+  <link rel="author" href="https://www.linkedin.com/in/prashant-madane-5b3954188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" />
+  <link rel="me" href="https://www.facebook.com/prashant.madane.353" />
+  <link rel="me" href="https://www.instagram.com/prashantam_yoga?igsh=c3ppNzN6M2s1eGEx" />
+  <link rel="me" href="https://x.com/PrashantaMYoga?t=_VgkhFpkdLmRhfQaGe3wgw&s=08" />
+  <link rel="me" href="https://www.youtube.com/@prashantmadane7129" />
 
-        {/* Social Media Links */}
-        <link
-          rel="author"
-          href="https://www.linkedin.com/in/prashant-madane-5b3954188?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-        />
-        <link rel="me" href="https://www.facebook.com/prashant.madane.353" />
-        <link
-          rel="me"
-          href="https://www.instagram.com/prashantam_yoga?igsh=c3ppNzN6M2s1eGEx"
-        />
-        <link
-          rel="me"
-          href="https://x.com/PrashantaMYoga?t=_VgkhFpkdLmRhfQaGe3wgw&s=08"
-        />
-        <link rel="me" href="https://www.youtube.com/@prashantmadane7129" />
-
-        {/* Content Security Policy */}
-      {/*   <meta
-          httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://dummyimage.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'self';"
-        />
+  {/* Content Security Policy */}
+{/*   <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://dummyimage.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'self';" />
  */}
-        {/* Referrer Policy */}
-        <meta name="referrer" content="no-referrer-when-downgrade" />
-      </Head>
+  {/* Referrer Policy */}
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+</Head>
       <main>
         <div
           className={styles.hero}
