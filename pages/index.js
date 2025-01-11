@@ -84,12 +84,30 @@ export default function Home() {
   <link rel="me" href="https://www.instagram.com/prashantam_yoga?igsh=c3ppNzN6M2s1eGEx" />
   <link rel="me" href="https://x.com/PrashantaMYoga?t=_VgkhFpkdLmRhfQaGe3wgw&s=08" />
   <link rel="me" href="https://www.youtube.com/@prashantmadane7129" />
+
  {/*  meta tags for google analytics */}
  <meta
           name="google-site-verification"
           content="seHxBoEb3DdKsjapqfH5CjE4n25BkWoZQk8kMlYXLEQ"
         />
 
+
+  {/* Google Analytics Script */}
+  <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-3WZY3N9XVR"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-3WZY3N9XVR');
+            `,
+          }}
+        />
+        
   {/* Content Security Policy */}
 {/*   <meta httpEquiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://dummyimage.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; frame-src 'self';" />
  */}
